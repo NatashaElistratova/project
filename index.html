@@ -5,31 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-<header>
-    <nav>
-        <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
-      </nav>
-      <div class="buttons-wrap">
-        <button></button><button></button>
-    </div>
-    </header>
+  </head>
+  <body>
+    <header></header>
     <main>
-      <section>
-        <h2></h2>
-        <div class="card"></div>
-      </section>
-      <section>
-        <h2></h2>
-        <div class="card"></div>
-      </section>
+      <label for="testInput">Введите число</label>
+      <input type="number" min="0" value="" id="testInput">
+      <button type="button" onclick="addNumber()">Добавить число</button>
+      <div id="result"></div>
+
+      <select name="" id="carModel" onchange="setPrice(this)">
+        <option value="bmw">BMW</option>
+        <option value="audi">Audi</option>
+      </select>
+
+      <select name="" id="price" onchange="calcPrice(this)""></select>
     </main>
     <footer></footer>
+    <script src="./index.js"></script>
   </body>
 </html>
